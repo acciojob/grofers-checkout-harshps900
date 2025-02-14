@@ -17,7 +17,7 @@ let existingTotalRow = document.getElementById("totalRow");
 	 let table = document.querySelector("table");
 
     let newRow = document.createElement("tr");
-    newRow.id = "totalRow"; 
+    newRow.id = "ans"; 
     let totalCell = document.createElement("td");
     totalCell.colSpan = 2; 
     totalCell.innerText = "Total Price: ₹" + total.toFixed(2);
