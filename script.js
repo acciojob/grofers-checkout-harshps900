@@ -4,15 +4,11 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-   let price = document.querySelectorAll(".prices");
+   let price = document.querySelectorAll(".price");
     
     let total = 0;
-	    for (let i = 0; i < price.length-1; i++) {
+	    for (let i = 0; i < price.length; i++) {
         total += parseFloat(price[i].innerText) ; 
-    }
-let existingTotalRow = document.getElementById("totalRow");
-    if (existingTotalRow) {
-        existingTotalRow.remove();
     }
 	 let table = document.querySelector("table");
 
