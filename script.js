@@ -10,6 +10,10 @@ const getSum = () => {
 	    for (let i = 0; i < price.length; i++) {
         total += parseFloat(price[i].innerText) ; 
     }
+let existingTotalRow = document.getElementById("totalRow");
+    if (existingTotalRow) {
+        existingTotalRow.remove();
+    }
 	 let table = document.querySelector("table");
 
     let newRow = document.createElement("tr");
